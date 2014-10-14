@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	
+		<meta charset="utf-8">
+		<title>Assignment 2 - Snake Canvas Game</title>
+		<link rel="stylesheet" href="css/snake.css" />
+		<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
+		
+	</head>
+
+	<body>
+		<section id="page">
+		
+			<header>
+				<h1>Snake Game in Canvas</h1>
+			</header>	
+			
+			<span  id="scoreBoard" style="font-size:x-large;"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<span id="highScore" style="font-size:x-large;color:red;display:none;"> ...New High Score!!!...</span>
+			
+			<section id="layers">
+			
+				<canvas id="bg" width="760" height="440">
+					Sorry, your web browser does not support canvas content.
+				</canvas>
+				
+				<canvas id="game" width="760" height="440"></canvas>
+				
+				<canvas id="ui" width="760" height="440"></canvas>
+				
+				<div id="menu">
+				
+					<h1 id="snake">Snake Game</h1>
+					<p id="info">by Jagraj Singh</p>
+					<a href="javascript: void(0)" id="start" >Start</a>
+					<p>
+						<marquee direction="right"><img src="images/snake.gif" alt="snake_image"/>&nbsp;&nbsp;&nbsp;&nbsp;
+							<img src="images/frog.gif" alt="frog_image" width="80" height="80"/>
+						</marquee>
+					</p>
+					
+				</div>
+				
+				<div id="reMenu" style="display:none;">
+				
+					<h1 id="snake2">Snake Game</h1>
+					<p id="info2">Game Over</p>
+					<a href="javascript: void(0)" id="restart" >Restart</a> 				
+					<a href="#" id="tweet" target="_blank" rel="nofollow">Tweet My Score</a> 
+					
+				</div>
+				
+			</section>
+			 
+			<p>
+				<span style="color:red;">Instructions :</span> 
+				<span id="bottom_msg" style="display:none;"> Bonus Food Available!!!  Hurry up!!!  
+					<span id="food_timer">15</span> seconds left...
+				</span>
+			</p>
+			
+			
+			<footer>
+				<p>@Copyrights JAGRAJ SINGH 300781914 WEB GAME PROGRAMMING</p>
+			</footer>
+			
+		</section>
+		
+		<audio id="start_music" loop>
+			
+			<source src="sounds/killingsound.mp3" type="audio/mp3" />
+			
+		</audio>
+
+		<audio id="main_music" loop>
+		
+			<source src="sounds/backsound.wav"  type="audio/wav" />
+			
+		</audio>
+        <div id="powerUpBoard" style="position:absolute;left:2%;top:20%;border:5px groove green;width:12%;height:18%;display:none;">
+            <div style="text-align:center;font-size:x-large;font-weight:600;">Level : <span id="levelNum">1</span></div>
+           <div style="text-align:center;font-size:x-large;font-weight:600;">Power Up</div>
+              
+            <img id="life1" src="images/star1.png" width="30%" height="42%" style="display:none;"/>
+            <img id="life2" src="images/star1.png" width="30%" height="42%" style="display:none;"/>
+            <img id="life3" src="images/star1.png" width="30%" height="42%" style="display:none;"/>
+        </div>
+
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+        <script src="js/jquery-1.4.3.js"></script>
+		<script src="js/snake.js"></script>
+
+	</body>
+</html>

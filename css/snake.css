@@ -1,0 +1,160 @@
+@import url("http://fonts.googleapis.com/css?family=Press+Start+2P");
+
+html, body {
+	
+	background: url(../images/title_bg.png) 50% 0 no-repeat, url(../images/bg_repeat.png) 50% 0 repeat-y #889ba7;
+	margin: 0;
+	font-family: 'Josefin Sans', arial, serif;
+	color: #111;	
+}
+
+#game{
+	
+	position:relative;
+
+}
+
+#menu h1,#reMenu h1{
+	
+	font: 46px "Press Start 2P", cursive;
+	color: white;
+	text-align: center;
+
+}
+
+#menu, #reMenu {
+
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	font: 20px "Press Start 2P", cursive;
+	color: white;
+	text-align: center;
+
+}
+
+header h1{
+
+	margin-top:25px;
+
+}
+
+marquee{
+	
+	position: absolute;
+	top:40%;
+	left:0%;
+	width:100%;
+	
+}
+
+a{
+	
+	font-size : 16px; 
+	margin: 0;
+	display: inline-block;
+	position: relative;
+	left: 0;
+	
+}
+
+a#start, a#restart, a#tweet, p#loading {
+
+	font-size: 24px;
+	display: block;
+	width: 120px;
+	top: 30%;	
+	left: 0; 
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	padding: 10px;
+	text-decoration: none;
+	margin: 0 auto; 
+	
+}
+
+a#restart {
+
+	width: 165px; 
+	top: 20%;
+	
+}
+
+a#tweet {
+
+	top: 25%; 
+	width: 342px;
+	
+}
+
+#page {
+
+	width: 821px;	
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	text-shadow: 0 1px 5px rgba(60,60,60,.6);
+	
+}
+
+header {
+	
+	height: 50px;
+	padding-top: 36px;
+	margin-bottom: 50px;
+	font-family: "Rock Salt", Arial, sans-serif;
+	font-size: 14px;
+	text-shadow: 0 1px 0 rgba(200,200,200,.5);
+	color: #121;
+	
+}
+
+#layers {
+	
+	height: 440px;
+	position: relative;
+	margin: 0 auto;
+	width:760px;
+	height: 440px;
+	
+}
+
+#layers canvas{
+	
+	left: 50%;
+	margin-left: -384px;
+	position: absolute;
+	
+}
+
+#guide {
+
+	opacity: .7;
+	
+}
+
+
+#guide.fadeout {
+
+	opacity: 0;
+	-webkit-transition: opacity .5s linear;
+	transition: opacity .5s linear;
+	
+}
+
+#ui {
+
+	-webkit-transition: opacity .3s linear;
+	transition: opacity .3s linear;
+	
+}
+
+#ui.dim {
+
+	opacity: .3;	
+	
+}
